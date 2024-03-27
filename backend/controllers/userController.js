@@ -21,7 +21,7 @@ const registerUser = asyncHandler(async (req, res) => {
 // @desc Register a new user
 // route POST /api/users/logout
 // @access Public
-const logoutUSer = asyncHandler(async (req, res) => {
+const logoutUser = asyncHandler(async (req, res) => {
   res.status(200).json({ message: "Logout User" });
 });
 
@@ -42,7 +42,7 @@ const updateUserProfile = asyncHandler(async (req, res) => {
 export {
   authUser,
   registerUser,
-  logoutUSer,
+  logoutUser,
   getUserProfile,
   updateUserProfile,
 };
