@@ -23,7 +23,6 @@ const authUser = asyncHandler(async (req, res) => {
     res.status(401);
     throw new Error("Inavlid email or password");
   }
-  res.status(200).json({ message: "Auth User" });
 });
 
 // @desc Register a new user
